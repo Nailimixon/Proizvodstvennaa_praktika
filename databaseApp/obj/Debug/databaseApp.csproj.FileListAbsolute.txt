@@ -1,0 +1,12 @@
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\bin\Debug\databaseApp.exe.config
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\bin\Debug\databaseApp.exe
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\bin\Debug\databaseApp.pdb
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.csproj.AssemblyReference.cache
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.MainChoices.resources
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.MainWindow.resources
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.Properties.Resources.resources
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.csproj.GenerateResource.cache
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.csproj.CoreCompileInputs.cache
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.exe
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.pdb
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.exe.config
