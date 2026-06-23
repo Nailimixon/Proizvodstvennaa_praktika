@@ -30,9 +30,6 @@
         {
             this.directorTabControl = new System.Windows.Forms.TabControl();
             this.teachersPage = new System.Windows.Forms.TabPage();
-            this.deleteButtonTeachears = new System.Windows.Forms.Button();
-            this.updateButtonTeachears = new System.Windows.Forms.Button();
-            this.addButtonTeachears = new System.Windows.Forms.Button();
             this.teachearsView = new System.Windows.Forms.DataGridView();
             this.subjectsPage = new System.Windows.Forms.TabPage();
             this.subjectsView = new System.Windows.Forms.DataGridView();
@@ -40,6 +37,9 @@
             this.worksView = new System.Windows.Forms.DataGridView();
             this.achievementsPage = new System.Windows.Forms.TabPage();
             this.achievementsView = new System.Windows.Forms.DataGridView();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.directorTabControl.SuspendLayout();
             this.teachersPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teachearsView)).BeginInit();
@@ -60,59 +60,20 @@
             this.directorTabControl.Location = new System.Drawing.Point(0, 0);
             this.directorTabControl.Name = "directorTabControl";
             this.directorTabControl.SelectedIndex = 0;
-            this.directorTabControl.Size = new System.Drawing.Size(800, 452);
+            this.directorTabControl.Size = new System.Drawing.Size(800, 396);
             this.directorTabControl.TabIndex = 0;
             this.directorTabControl.SelectedIndexChanged += new System.EventHandler(this.directorTabControl_SelectedIndexChanged);
             // 
             // teachersPage
             // 
-            this.teachersPage.Controls.Add(this.deleteButtonTeachears);
-            this.teachersPage.Controls.Add(this.updateButtonTeachears);
-            this.teachersPage.Controls.Add(this.addButtonTeachears);
             this.teachersPage.Controls.Add(this.teachearsView);
             this.teachersPage.Location = new System.Drawing.Point(4, 25);
             this.teachersPage.Name = "teachersPage";
             this.teachersPage.Padding = new System.Windows.Forms.Padding(3);
-            this.teachersPage.Size = new System.Drawing.Size(792, 423);
+            this.teachersPage.Size = new System.Drawing.Size(792, 367);
             this.teachersPage.TabIndex = 0;
             this.teachersPage.Text = "Преподаватели";
             this.teachersPage.UseVisualStyleBackColor = true;
-            // 
-            // deleteButtonTeachears
-            // 
-            this.deleteButtonTeachears.AutoSize = true;
-            this.deleteButtonTeachears.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.deleteButtonTeachears.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteButtonTeachears.Location = new System.Drawing.Point(505, 316);
-            this.deleteButtonTeachears.Name = "deleteButtonTeachears";
-            this.deleteButtonTeachears.Size = new System.Drawing.Size(122, 39);
-            this.deleteButtonTeachears.TabIndex = 18;
-            this.deleteButtonTeachears.Text = "Удалить";
-            this.deleteButtonTeachears.UseVisualStyleBackColor = true;
-            // 
-            // updateButtonTeachears
-            // 
-            this.updateButtonTeachears.AutoSize = true;
-            this.updateButtonTeachears.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.updateButtonTeachears.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateButtonTeachears.Location = new System.Drawing.Point(325, 316);
-            this.updateButtonTeachears.Name = "updateButtonTeachears";
-            this.updateButtonTeachears.Size = new System.Drawing.Size(138, 39);
-            this.updateButtonTeachears.TabIndex = 17;
-            this.updateButtonTeachears.Text = "Обновить";
-            this.updateButtonTeachears.UseVisualStyleBackColor = true;
-            // 
-            // addButtonTeachears
-            // 
-            this.addButtonTeachears.AutoSize = true;
-            this.addButtonTeachears.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.addButtonTeachears.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButtonTeachears.Location = new System.Drawing.Point(152, 316);
-            this.addButtonTeachears.Name = "addButtonTeachears";
-            this.addButtonTeachears.Size = new System.Drawing.Size(133, 39);
-            this.addButtonTeachears.TabIndex = 16;
-            this.addButtonTeachears.Text = "Добавить";
-            this.addButtonTeachears.UseVisualStyleBackColor = true;
             // 
             // teachearsView
             // 
@@ -133,7 +94,7 @@
             this.subjectsPage.Location = new System.Drawing.Point(4, 25);
             this.subjectsPage.Name = "subjectsPage";
             this.subjectsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.subjectsPage.Size = new System.Drawing.Size(792, 423);
+            this.subjectsPage.Size = new System.Drawing.Size(792, 367);
             this.subjectsPage.TabIndex = 1;
             this.subjectsPage.Text = "Предметы";
             this.subjectsPage.UseVisualStyleBackColor = true;
@@ -157,7 +118,7 @@
             this.worksPage.Location = new System.Drawing.Point(4, 25);
             this.worksPage.Name = "worksPage";
             this.worksPage.Padding = new System.Windows.Forms.Padding(3);
-            this.worksPage.Size = new System.Drawing.Size(792, 423);
+            this.worksPage.Size = new System.Drawing.Size(792, 367);
             this.worksPage.TabIndex = 2;
             this.worksPage.Text = "Занятия";
             this.worksPage.UseVisualStyleBackColor = true;
@@ -181,7 +142,7 @@
             this.achievementsPage.Location = new System.Drawing.Point(4, 25);
             this.achievementsPage.Name = "achievementsPage";
             this.achievementsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.achievementsPage.Size = new System.Drawing.Size(792, 423);
+            this.achievementsPage.Size = new System.Drawing.Size(792, 367);
             this.achievementsPage.TabIndex = 3;
             this.achievementsPage.Text = "Достижения";
             this.achievementsPage.UseVisualStyleBackColor = true;
@@ -199,18 +160,59 @@
             this.achievementsView.Size = new System.Drawing.Size(776, 259);
             this.achievementsView.TabIndex = 17;
             // 
+            // deleteButton
+            // 
+            this.deleteButton.AutoSize = true;
+            this.deleteButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteButton.Location = new System.Drawing.Point(505, 402);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(122, 39);
+            this.deleteButton.TabIndex = 18;
+            this.deleteButton.Text = "Удалить";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // updateButton
+            // 
+            this.updateButton.AutoSize = true;
+            this.updateButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updateButton.Location = new System.Drawing.Point(325, 402);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(138, 39);
+            this.updateButton.TabIndex = 17;
+            this.updateButton.Text = "Обновить";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // addButton
+            // 
+            this.addButton.AutoSize = true;
+            this.addButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addButton.Location = new System.Drawing.Point(152, 402);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(133, 39);
+            this.addButton.TabIndex = 16;
+            this.addButton.Text = "Добавить";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
             // MainChoices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.directorTabControl);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.addButton);
             this.Name = "MainChoices";
             this.Text = "MainChoices";
             this.Load += new System.EventHandler(this.MainChoices_Load);
             this.directorTabControl.ResumeLayout(false);
             this.teachersPage.ResumeLayout(false);
-            this.teachersPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teachearsView)).EndInit();
             this.subjectsPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.subjectsView)).EndInit();
@@ -219,6 +221,7 @@
             this.achievementsPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.achievementsView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -229,9 +232,9 @@
         private System.Windows.Forms.TabPage subjectsPage;
         private System.Windows.Forms.TabPage worksPage;
         private System.Windows.Forms.TabPage achievementsPage;
-        private System.Windows.Forms.Button deleteButtonTeachears;
-        private System.Windows.Forms.Button updateButtonTeachears;
-        private System.Windows.Forms.Button addButtonTeachears;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.DataGridView teachearsView;
         private System.Windows.Forms.DataGridView subjectsView;
         private System.Windows.Forms.DataGridView worksView;
