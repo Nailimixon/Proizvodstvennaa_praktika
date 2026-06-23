@@ -3,12 +3,12 @@ GO
 
 CREATE TABLE positions (
 	id INT PRIMARY KEY IDENTITY(1,1),
-	namen VARCHAR(50) NOT NULL
+	namen VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE qualifications (
 	id INT PRIMARY KEY IDENTITY(1,1),
-	namen VARCHAR(50) NOT NULL
+	namen VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE teachers (
@@ -27,6 +27,33 @@ CREATE TABLE teachers (
 
 CREATE TABLE subjects (
 	id INT PRIMARY KEY IDENTITY(1,1),
-	namen VARCHAR(50) NOT NULL,
+	namen VARCHAR(50) NOT NULL UNIQUE,
 	all_hours INT NOT NULL
+);
+
+CREATE TABLE works (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    teacher_id INT NOT NULL,
+    subject_id INT NOT NULL,
+    academic_year  VARCHAR(9) NOT NULL,
+    count_hours INT NOT NULL,
+    is_there_an_exam BIT DEFAULT 0,
+    FOREIGN KEY (teacher_id) REFERENCES teachers(id),
+    FOREIGN KEY (subject_id) REFERENCES subjects(id),
+);
+
+CREATE TABLE level_types (
+    id INT PRIMARY KEY IDENTITY(1,1),
+	namen VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE achievements (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    teacher_id INT NOT NULL,
+    namen VARCHAR(100) NOT NULL,
+    achi_date DATE NOT NULL,
+    level_id INT NOT NULL,
+    reward VARCHAR(50),
+    FOREIGN KEY (teacher_id) REFERENCES teachers(id),
+    FOREIGN KEY (level_id) REFERENCES level_types(id)
 );
