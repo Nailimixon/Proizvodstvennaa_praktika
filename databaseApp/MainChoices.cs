@@ -141,10 +141,10 @@ namespace databaseApp
             {
                 main.loadpanel(new Subjects(main, currentTab));
             }
-            //else if (currentTab == 2)
-            //{
-            //    main.loadpanel(new Works(main, currentTab));
-            //}
+            else if (currentTab == 2)
+            {
+                main.loadpanel(new Works(main, currentTab));
+            }
             //else if (currentTab == 3)
             //{
             //    main.loadpanel(new Achievements(main, currentTab));
@@ -164,17 +164,18 @@ namespace databaseApp
             }
             else if (currentTab == 1 && subjectsView.CurrentRow.Cells != null)
             {
-                var r = teachearsView.CurrentRow.Cells;
+                var r = subjectsView.CurrentRow.Cells;
                 main.loadpanel(new Subjects(main, currentTab, r["Идентификатор"].Value.ToString(),
                     r["Название"].Value.ToString(), r["Количество часов на предмет"].Value.ToString()));
             }
-            //else if (currentTab == 2 && worksView.CurrentRow.Cells != null)
-            //{
-            //    main.loadpanel(new Works(main, currentTab, r["Идентификатор"].Value.ToString(), 
-            //        r["teacher_id"].Value.ToString(), r["subject_id"].Value.ToString(), 
-            //        r["Учебный год"].Value.ToString(), r["Количество часов в году"].Value.ToString(), 
-            //        r["Будет ли экзамен"].Value.ToString()));));
-            //}
+            else if (currentTab == 2 && worksView.CurrentRow.Cells != null)
+            {
+                var r = worksView.CurrentRow.Cells;
+                main.loadpanel(new Works(main, currentTab, r["Идентификатор"].Value.ToString(),
+                    r["teacher_id"].Value.ToString(), r["subject_id"].Value.ToString(),
+                    r["Учебный год"].Value.ToString(), r["Количество часов в году"].Value.ToString(),
+                    r["Будет ли экзамен"].Value.ToString()));
+            }
             //else if (currentTab == 3 && worksView.CurrentRow.Cells != null)
             //{
             //    main.loadpanel(new Achievements(main, currentTab, r["Идентификатор"].Value.ToString(), 

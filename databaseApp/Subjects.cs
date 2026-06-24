@@ -50,7 +50,11 @@ namespace databaseApp
                 MessageBox.Show("Пожалуйста, заполните Название и Количество часов!");
                 return;
             }
-
+            if (!int.TryParse(countHourTextBox.Text, out int hours) || hours <= 0)
+            {
+                MessageBox.Show("Ты не то ввел, нужно вводить правильное число", "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string query;
             if (isEdit)
             {

@@ -79,10 +79,39 @@ namespace databaseApp
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(firstNameTextBox.Text) || string.IsNullOrWhiteSpace(firstNameTextBox.Text))
+            if (string.IsNullOrWhiteSpace(firstNameTextBox.Text) || string.IsNullOrWhiteSpace(lastNameTextBox.Text))
             {
                 MessageBox.Show("Пожалуйста, заполните Фамилию и Имя преподавателя!");
                 return;
+            }
+
+            DateTime birth = birthDateTimePicker.Value.Date;
+            DateTime hire = hireDateTimePicker.Value.Date;
+
+            if (birth >= DateTime.Today)
+            {
+                MessageBox.Show("Он еще не родился?");
+                return;
+            }
+            if (hire < birth.AddYears(18))
+            {
+                MessageBox.Show("Возраст слишком низкий");
+                return;
+            }
+            if (hire > DateTime.Today)
+            {
+                MessageBox.Show("Дата не верна");
+                return;
+            }
+
+            string email = emailTextBox.Text;
+            if (!string.IsNullOrWhiteSpace(email))
+            {
+                if (!email.Contains("@") || !email.Contains("."))
+                {
+                    MessageBox.Show("Где собаку потерял?");
+                    return;
+                }
             }
 
             string query;
@@ -106,7 +135,7 @@ namespace databaseApp
                 {
                     SqlCommand cmd = new SqlCommand(query, connection);
 
-                    cmd.Parameters.AddWithValue("@last_name", firstNameTextBox.Text.Trim());
+                    cmd.Parameters.AddWithValue("@last_name", lastNameTextBox.Text.Trim());
                     cmd.Parameters.AddWithValue("@first_name", firstNameTextBox.Text.Trim());
                     if (string.IsNullOrWhiteSpace(patronymicTextBox.Text))
                     {
