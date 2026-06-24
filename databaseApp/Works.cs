@@ -45,7 +45,8 @@ namespace databaseApp
 
         private void Works_Load(object sender, EventArgs e)
         {
-            FillComboBox("SELECT id, CONCAT(last_name, ' ', first_name, ' ', patronymic) AS namen FROM teachers", teacherComboBox, "namen", "id");
+            FillComboBox("SELECT id, CONCAT(last_name, ' ', first_name, ' ', patronymic) AS namen " +
+                "FROM teachers", teacherComboBox, "namen", "id");
             FillComboBox("SELECT id, namen FROM subjects", subjectComboBox, "namen", "id");
 
             if (isEdit)

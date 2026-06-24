@@ -145,10 +145,10 @@ namespace databaseApp
             {
                 main.loadpanel(new Works(main, currentTab));
             }
-            //else if (currentTab == 3)
-            //{
-            //    main.loadpanel(new Achievements(main, currentTab));
-            //}
+            else if (currentTab == 3)
+            {
+                main.loadpanel(new Achievements(main, currentTab));
+            }
         }
 
         private void updateButton_Click(object sender, EventArgs e)
@@ -176,12 +176,13 @@ namespace databaseApp
                     r["Учебный год"].Value.ToString(), r["Количество часов в году"].Value.ToString(),
                     r["Будет ли экзамен"].Value.ToString()));
             }
-            //else if (currentTab == 3 && worksView.CurrentRow.Cells != null)
-            //{
-            //    main.loadpanel(new Achievements(main, currentTab, r["Идентификатор"].Value.ToString(), 
-            //        r["teacher_id"].Value.ToString(), r["Название"].Value.ToString(), 
-            //        r["Дата проведения"].Value.ToString(), r["level_id"].Value.ToString(), r["Результат"].Value.ToString()));
-            //}
+            else if (currentTab == 3 && worksView.CurrentRow.Cells != null)
+            {
+                var r = achievementsView.CurrentRow.Cells;
+                main.loadpanel(new Achievements(main, currentTab, r["Идентификатор"].Value.ToString(),
+                    r["teacher_id"].Value.ToString(), r["Название"].Value.ToString(),
+                    r["Дата проведения"].Value.ToString(), r["level_id"].Value.ToString(), r["Результат"].Value.ToString()));
+            }
         }
 
         private void deleteButton_Click(object sender, EventArgs e)

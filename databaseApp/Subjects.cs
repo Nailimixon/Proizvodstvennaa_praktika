@@ -47,7 +47,7 @@ namespace databaseApp
         {
             if (string.IsNullOrWhiteSpace(namenTextBox.Text) || string.IsNullOrWhiteSpace(countHourTextBox.Text))
             {
-                MessageBox.Show("Пожалуйста, заполните Название и Количество часов!");
+                MessageBox.Show("Заполни Название и Количество часов!");
                 return;
             }
             if (!int.TryParse(countHourTextBox.Text, out int hours) || hours <= 0)

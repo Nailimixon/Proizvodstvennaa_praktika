@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|c:\\users\\prepodavatel\\desktop\\grouup_36_popov\\\u0431\u0434\\praktika\\databaseapp\\works.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|solutionrelative:works.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|c:\\users\\prepodavatel\\desktop\\grouup_36_popov\\\u0431\u0434\\praktika\\databaseapp\\achievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|solutionrelative:achievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|c:\\users\\prepodavatel\\desktop\\grouup_36_popov\\\u0431\u0434\\praktika\\databaseapp\\works.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|solutionrelative:works.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|c:\\users\\prepodavatel\\desktop\\grouup_36_popov\\\u0431\u0434\\praktika\\databaseapp\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|solutionrelative:teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|c:\\users\\prepodavatel\\desktop\\grouup_36_popov\\\u0431\u0434\\praktika\\databaseapp\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|c:\\users\\prepodavatel\\desktop\\grouup_36_popov\\\u0431\u0434\\praktika\\databaseapp\\achievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|solutionrelative:achievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BBE868E-6573-4985-A840-7A78A8EA454B}|databaseApp.csproj|solutionrelative:teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -30,36 +34,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Works.cs",
-              "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Works.cs",
-              "RelativeDocumentMoniker": "Works.cs",
-              "ToolTip": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Works.cs",
-              "RelativeToolTip": "Works.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwGIAAABHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Teachers.cs",
+              "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Teachers.cs",
+              "RelativeDocumentMoniker": "Teachers.cs",
+              "ToolTip": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Teachers.cs",
+              "RelativeToolTip": "Teachers.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAowK4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T12:14:01.779Z",
+              "WhenOpened": "2026-06-24T13:20:09.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Works.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Works.cs",
-              "RelativeDocumentMoniker": "Works.cs",
-              "ToolTip": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Works.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Works.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentIndex": 0,
+              "Title": "Achievements.cs",
+              "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Achievements.cs",
+              "RelativeDocumentMoniker": "Achievements.cs",
+              "ToolTip": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Achievements.cs",
+              "RelativeToolTip": "Achievements.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAUwJIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T12:13:35.708Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2026-06-24T13:14:29.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Achievements.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Achievements.cs",
+              "RelativeDocumentMoniker": "Achievements.cs",
+              "ToolTip": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Achievements.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Achievements.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T13:14:25.799Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Teachers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\Teachers.cs",
               "RelativeDocumentMoniker": "Teachers.cs",
@@ -71,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainChoices.cs",
               "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\MainChoices.cs",
               "RelativeDocumentMoniker": "MainChoices.cs",
               "ToolTip": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\MainChoices.cs",
               "RelativeToolTip": "MainChoices.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAqwEgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAAALcAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T08:55:18.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainChoices.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Prepodavatel\\Desktop\\Grouup_36_Popov\\\u0411\u0414\\praktika\\databaseApp\\MainChoices.cs",
               "RelativeDocumentMoniker": "MainChoices.cs",

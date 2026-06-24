@@ -18,7 +18,6 @@ namespace databaseApp
         private string connectionstring = @"Server=.; Database=Teachears; Integrated Security=True;";
         private bool isEdit = false;
         private string teacherId = "";
-
         public Teachers(MainWindow main1, int currentTab)
         {
             InitializeComponent();
@@ -81,7 +80,7 @@ namespace databaseApp
         {
             if (string.IsNullOrWhiteSpace(firstNameTextBox.Text) || string.IsNullOrWhiteSpace(lastNameTextBox.Text))
             {
-                MessageBox.Show("Пожалуйста, заполните Фамилию и Имя преподавателя!");
+                MessageBox.Show("Заполни Фамилию и Имя преподавателя!");
                 return;
             }
 

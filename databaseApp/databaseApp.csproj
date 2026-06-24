@@ -84,6 +84,9 @@
     <Compile Include="Works.Designer.cs">
       <DependentUpon>Works.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainChoices.resx">
       <DependentUpon>MainChoices.cs</DependentUpon>
     </EmbeddedResource>
