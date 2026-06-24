@@ -205,6 +205,7 @@
             this.saveButton.TabIndex = 83;
             this.saveButton.Text = "Добавить";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // backButton
             // 

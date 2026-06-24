@@ -137,10 +137,10 @@ namespace databaseApp
             { 
                 main.loadpanel(new Teachers(main, currentTab));
             }
-            //else if (currentTab == 1)
-            //{
-            //    main.loadpanel(new Subjects(main, currentTab));
-            //}
+            else if (currentTab == 1)
+            {
+                main.loadpanel(new Subjects(main, currentTab));
+            }
             //else if (currentTab == 2)
             //{
             //    main.loadpanel(new Works(main, currentTab));
@@ -162,12 +162,12 @@ namespace databaseApp
                     r["Почта"].Value.ToString(), r["Дата рождения"].Value.ToString(), r["Дата найма"].Value.ToString(), 
                     r["position"].Value.ToString(), r["qualification"].Value.ToString()));
             }
-            //else if (currentTab == 1 && subjectsView.CurrentRow.Cells != null)
-            //{
-            //    var r = teachearsView.CurrentRow.Cells;
-            //    main.loadpanel(new Subjects(main, currentTab, r["Идентификатор"].Value.ToString(), 
-            //        r["Название"].Value.ToString(), r["Количество часов на предмет"].Value.ToString()));
-            //}
+            else if (currentTab == 1 && subjectsView.CurrentRow.Cells != null)
+            {
+                var r = teachearsView.CurrentRow.Cells;
+                main.loadpanel(new Subjects(main, currentTab, r["Идентификатор"].Value.ToString(),
+                    r["Название"].Value.ToString(), r["Количество часов на предмет"].Value.ToString()));
+            }
             //else if (currentTab == 2 && worksView.CurrentRow.Cells != null)
             //{
             //    main.loadpanel(new Works(main, currentTab, r["Идентификатор"].Value.ToString(), 

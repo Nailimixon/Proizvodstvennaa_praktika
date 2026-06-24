@@ -108,12 +108,33 @@ namespace databaseApp
 
                     cmd.Parameters.AddWithValue("@last_name", firstNameTextBox.Text.Trim());
                     cmd.Parameters.AddWithValue("@first_name", firstNameTextBox.Text.Trim());
-                    cmd.Parameters.AddWithValue("@patronymic", string.IsNullOrWhiteSpace(patronymicTextBox.Text) ? (object)DBNull.Value : patronymicTextBox.Text.Trim());
+                    if (string.IsNullOrWhiteSpace(patronymicTextBox.Text))
+                    {
+                        cmd.Parameters.AddWithValue("@patronymic", DBNull.Value);
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@patronymic", patronymicTextBox.Text);
+                    }
                     cmd.Parameters.AddWithValue("@birth_date", birthDateTimePicker.Value.Date);
                     cmd.Parameters.AddWithValue("@hire_date", hireDateTimePicker.Value.Date);
                     cmd.Parameters.AddWithValue("@position", positionComboBox.SelectedValue);
-                    cmd.Parameters.AddWithValue("@qualification", qualificationComboBox.SelectedValue ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@email", string.IsNullOrWhiteSpace(emailTextBox.Text) ? (object)DBNull.Value : emailTextBox.Text.Trim());
+                    if (qualificationComboBox.SelectedValue == null)
+                    {
+                        cmd.Parameters.AddWithValue("@qualification", DBNull.Value);
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@qualification", qualificationComboBox.SelectedValue);
+                    }
+                    if (string.IsNullOrWhiteSpace(emailTextBox.Text))
+                    {
+                        cmd.Parameters.AddWithValue("@email", DBNull.Value);
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@email", emailTextBox.Text);
+                    }
 
                     if (isEdit)
                     {
@@ -123,7 +144,14 @@ namespace databaseApp
                     connection.Open();
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show(isEdit ? "Данные преподавателя успешно обновлены!" : "Преподаватель успешно добавлен!");
+                    if (isEdit)
+                    {
+                        MessageBox.Show("Данные преподавателя успешно обновлены!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Преподаватель успешно добавлен!");
+                    }
 
                     main.loadpanel(new MainChoices(main, backTab));
                 }

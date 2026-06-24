@@ -11,3 +11,4 @@ C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debu
 C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.pdb
 C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.exe.config
 C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.Teachers.resources
+C:\Users\Prepodavatel\Desktop\Grouup_36_Popov\БД\praktika\databaseApp\obj\Debug\databaseApp.Subjects.resources
