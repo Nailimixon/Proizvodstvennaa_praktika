@@ -40,6 +40,7 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
+            this.usefulButton = new System.Windows.Forms.Button();
             this.directorTabControl.SuspendLayout();
             this.teachersPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teachearsView)).BeginInit();
@@ -165,7 +166,7 @@
             this.deleteButton.AutoSize = true;
             this.deleteButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteButton.Location = new System.Drawing.Point(505, 402);
+            this.deleteButton.Location = new System.Drawing.Point(363, 402);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(122, 39);
             this.deleteButton.TabIndex = 18;
@@ -178,7 +179,7 @@
             this.updateButton.AutoSize = true;
             this.updateButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateButton.Location = new System.Drawing.Point(325, 402);
+            this.updateButton.Location = new System.Drawing.Point(209, 402);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(138, 39);
             this.updateButton.TabIndex = 17;
@@ -191,7 +192,7 @@
             this.addButton.AutoSize = true;
             this.addButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(152, 402);
+            this.addButton.Location = new System.Drawing.Point(59, 402);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(133, 39);
             this.addButton.TabIndex = 16;
@@ -199,11 +200,25 @@
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
+            // usefulButton
+            // 
+            this.usefulButton.AutoSize = true;
+            this.usefulButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.usefulButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.usefulButton.Location = new System.Drawing.Point(500, 402);
+            this.usefulButton.Name = "usefulButton";
+            this.usefulButton.Size = new System.Drawing.Size(246, 39);
+            this.usefulButton.TabIndex = 19;
+            this.usefulButton.Text = "Полезные запросы";
+            this.usefulButton.UseVisualStyleBackColor = true;
+            this.usefulButton.Click += new System.EventHandler(this.usefulButton_Click);
+            // 
             // MainChoices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.usefulButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.directorTabControl);
             this.Controls.Add(this.updateButton);
@@ -239,5 +254,6 @@
         private System.Windows.Forms.DataGridView subjectsView;
         private System.Windows.Forms.DataGridView worksView;
         private System.Windows.Forms.DataGridView achievementsView;
+        private System.Windows.Forms.Button usefulButton;
     }
 }

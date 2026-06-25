@@ -216,5 +216,16 @@ namespace databaseApp
                 DeleteData($"DELETE FROM {table} WHERE id = @id", currentGrid);
             }
         }
+
+        private void usefulButton_Click(object sender, EventArgs e)
+        {
+            int currentTab = directorTabControl.SelectedIndex;
+            if (currentTab == 1)
+            {
+                MessageBox.Show("Для таблицы 'Предметы' аналитические отчеты не предусмотрены.", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            main.loadpanel(new Statistic(main, currentTab));
+        }
     }
 }

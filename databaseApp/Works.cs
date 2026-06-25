@@ -121,6 +121,7 @@ namespace databaseApp
                 query = @"INSERT INTO works (teacher_id, subject_id, academic_year, count_hours, is_there_an_exam) 
                   VALUES (@teacher_id, @subject_id, @academic_year, @count_hours, @is_there_an_exam)";
             }
+
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionstring))
