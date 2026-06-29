@@ -176,7 +176,7 @@ namespace databaseApp
                     r["Учебный год"].Value.ToString(), r["Количество часов в году"].Value.ToString(),
                     r["Будет ли экзамен"].Value.ToString()));
             }
-            else if (currentTab == 3 && achievementsView.CurrentRow.Cells != null)
+            else if (currentTab == 3 && worksView.CurrentRow.Cells != null)
             {
                 var r = achievementsView.CurrentRow.Cells;
                 main.loadpanel(new Achievements(main, currentTab, r["Идентификатор"].Value.ToString(),
