@@ -26,7 +26,7 @@ namespace databaseApp
             this.isEdit = false;
         }
 
-        public Teachers(MainWindow main1, int currentTab, string id, string lastName, string firstName,
+        public Teachers(MainWindow main1, int currentTab, string id, string firstName, string lastName,
             string patronymic, string email, string birthDate, string hireDate, string positionId, string qualificationId)
         {
             InitializeComponent();

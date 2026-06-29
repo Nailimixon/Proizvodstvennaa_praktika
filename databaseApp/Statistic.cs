@@ -81,7 +81,21 @@ namespace databaseApp
 
             string queryTotalHours = "SELECT SUM(count_hours) FROM works;";
             string queryExamsCount = "SELECT COUNT(*) FROM works WHERE is_there_an_exam = 1;";
-
+            string queryTeacherHours = @"SELECT w.academic_year AS [Год], 
+            CONCAT(t.last_name, ' ', t.first_name, ' ', t.patronymic) AS [ФИО], 
+            s.namen AS [Предметы], w.count_hours AS [Часы] 
+            FROM works w 
+            LEFT JOIN teachers t ON w.teacher_id = t.id 
+            LEFT JOIN subjects s ON w.subject_id = s.id 
+            ORDER BY t.last_name;";
+            string queryExamTeachers = @"SELECT SELECT w.academic_year AS [Год], 
+            CONCAT(t.last_name, ' ', t.first_name, ' ', t.patronymic) AS [ФИО], 
+            s.namen AS [Предметы] 
+            FROM works w 
+            LEFT JOIN teachers t ON w.teacher_id = t.id 
+            LEFT JOIN subjects s ON w.subject_id = s.id 
+            WHERE w.is_there_an_exam = 1 
+            ORDER BY t.last_name;";
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionstring))
@@ -96,6 +110,46 @@ namespace databaseApp
 
                     sb.AppendLine($"Общий объем выданных часов по колледжу: {totalHours ?? 0} ч.");
                     sb.AppendLine($"Всего запланировано экзаменов: {totalExams ?? 0}");
+
+                    sb.AppendLine("Нагрузка по преподавателям:");
+                    SqlCommand cmd3 = new SqlCommand( queryTeacherHours, conn);
+                    using (SqlDataReader reader = cmd3.ExecuteReader())
+                    {
+                        string currentYear = "";
+                        while (reader.Read())
+                        { 
+                            string year = reader["Год"].ToString();
+                            if ( year != currentYear)
+                            {
+                                currentYear = year;
+                                sb.AppendLine();
+                                sb.AppendLine($"{year}:");
+                            }
+                            string fio = reader["ФИО"].ToString();
+                            string sub = reader["Предметы"].ToString();
+                            int hours = Convert.ToInt32(reader["Часы"]);
+                            sb.AppendLine($"{fio} - {sub}: {hours} ч.");
+                        }
+                    }
+                    sb.AppendLine("Преподаватели с экзаменнами:");
+                    SqlCommand cmd4 = new SqlCommand(queryExamTeachers, conn);
+                    using (SqlDataReader reader = cmd4.ExecuteReader())
+                    {
+                        string currentYear2 = "";
+                        while (reader.Read())
+                        {
+                            string year = reader["Год"].ToString();
+                            if (year != currentYear2)
+                            {
+                                currentYear2 = year;
+                                sb.AppendLine();
+                                sb.AppendLine($"{year}:");
+                            }
+                            string fio = reader["ФИО"].ToString();
+                            string sub = reader["Предметы"].ToString();
+                            sb.AppendLine($"{fio} - {sub}");
+                        }
+                    }
                 }
             }
             catch (Exception ex) { sb.AppendLine("Ошибка расчета: " + ex.Message); }
